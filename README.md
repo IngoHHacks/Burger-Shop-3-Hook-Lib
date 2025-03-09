@@ -4,7 +4,7 @@
 This is a C++ hooking library for Burger Shop 3.  
 It uses a `version.dll` proxy and `MinHook` for hooking.  
 The solution also contains three example hooks.
-If you want to learn more about hooking, see [GUIDE.md]() and the [MinHook wiki](https://github.com/TsudaKageyu/minhook/wiki)
+If you want to learn more about hooking, see [GUIDE.md](GUIDE.md) and the [MinHook wiki](https://github.com/TsudaKageyu/minhook/wiki)
 The library is for Windows only. Other operating systems are not supported. Feel free to make a pull request if you want to add support for other operating systems.
 
 ## Releases
