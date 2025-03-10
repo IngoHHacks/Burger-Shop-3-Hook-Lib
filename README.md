@@ -1,5 +1,10 @@
 # Burger Shop 3 Hooking Library
 
+## TL;WR
+Put the `version.dll` from the releases in the game's directory and DLL mods in the `mods` directory.  
+For developers, include the header file and link against the library, make a class extending `HookBase`, and call `RegisterHook` from the DLL's entry point.  
+Windows only. x86 only.
+
 ## Description
 This is a C++ hooking library for Burger Shop 3.  
 It uses a `version.dll` proxy and `MinHook` for hooking.  
@@ -117,3 +122,19 @@ The solution contains three example hooks:
 - `ExampleHook` - Creates an empty hook function on the game's update function and a "spawn" command that spawns a customer.
 - `CustomCustomerHook` - Adds a custom customer to the map named "BigBurgers" using the Surfer sprite. You'll still need to create an XML file for the customer for it to work.
 - `ImpatientCustomerHook` - The hook used in the guide. It makes customers very impatient.
+
+## Contributing
+Feel free to make a pull request if you want to add features or fix bugs.
+Thatse it. Have fun modding Burger Shop 3!
+
+## Credits
+- Me, for making the library. I'm awesome like that.
+- GoBit Games, for making Burger Shop 3, and especially Brian for helping me with the game's internals.
+- Tsuda Kageyu, for making MinHook.
+- Whoever wrote the `version.dll` proxy I copied from a random GitHub repository.
+
+## License
+No restrictions. No liability of any kind accepted.  
+By using this library, you forfeit all rights to sue me for any reason related to this project, and I forfeit all rights to sue you for any reason related to this project. That's it.  
+In other words, do whatever you want with it. I don't care. Just don't blame me if it breaks something. If you write a hook that destroys the game, that's on you. I'm not responsible for your actions.  
+Even if my code is the cause of the destruction, you're the one who ran it. Everything you do is at your own risk. I wrote it with the best intentions, but I can't guarantee it won't break something.
